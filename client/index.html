@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Node.Js Application by - Harshit Pandey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">textarea {
+    font-family: 'Menlo', 'Courier New', 'Courier';
+    width: 100%;
+    margin: 4px 0px 4px 0px;
+    resize: none;
+}</style>
+    
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Node.JS builder template by - OyeCode (Harshit Pandey)</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="btn-login">Sample Button</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    Enter a sample Text in Text Box : <br/>
+    <textarea id="query" rows="4" placeholder="Text Goes here... " autofocus=t"rue"></textarea>
+    <button id="btn-exec" type="submit" class="btn btn-default" onclick="changecolor();"><span class="glyphicon glyphicon-flash"></span> Change Color</button>
+    
+</div>
+
+  <script>
+  function changecolor() {
+    var elem = document.getElementById("query");
+    var newcolor =document.getElementById("query").value;
+    elem.style.backgroundColor = newcolor;
+  }
+ </script>
+</body>
+</html>
